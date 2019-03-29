@@ -1,4 +1,5 @@
 # AngularTraning
+[![Build Status](https://dev.azure.com/NRobakova0365/AngularTraining/_apis/build/status/nrobakova.angular-training?branchName=master)](https://dev.azure.com/NRobakova0365/AngularTraining/_build/latest?definitionId=1&branchName=master)
 
 [![Build Status](https://travis-ci.org/nrobakova/angular-training.svg?branch=master)](https://travis-ci.org/nrobakova/angular-training)
 
