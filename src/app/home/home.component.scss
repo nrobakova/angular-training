@@ -1,68 +1,35 @@
-@import '~igniteui-angular/lib/core/styles/themes/utilities';
-
-%content-display {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    flex-flow: column nowrap;
-    justify-content: stretch;
-    align-items: center;
-    padding: 40px 24px 40px 24px;
-    overflow: auto
+a {
+  color: #731963;
+  text-decoration: none;
 }
 
-@include b(content) {
-    @extend %content-display;
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .74);
+}
 
-    p {
-        margin: 0px 0px 8px 0px;
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 
-        &:nth-last-child(2) {
-            padding-top: 16px;
-        }
-    }
+.links{
+  text-align: center;
+  padding: 0 35px;
+}
 
-    @include e(header) {
-        color: igx-color($default-palette, 'primary');
-    }
+#linksContainer {
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+}
 
-    @include e(subject) {
-        margin-bottom: 16px;
-    }
+:host{
+  width: 100%;
+  text-align:center;
+}
 
-    @include e(container, $m: wide) {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-    }
-
-    @include e(link, $m: github) {
-        position: relative;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-
-        &:not(:first-child) {
-            margin-left: 24px;
-        } 
-
-
-        &::before {
-            position: relative;
-            display: block;
-            content: '';
-            min-width: 24px;
-            min-height: 24px;
-            background-image: url('../../assets/GitHub/github.svg');
-            background-size: 24px 24px;
-            background-repeat: no-repeat;
-            margin-right: 8px;
-        }
-    }
-    
-    @include e(image) {
-        margin-bottom: 48px;
-        max-height: 480px;
-        max-width: 100%;
-    }
+img {
+  max-width:100%;
 }
